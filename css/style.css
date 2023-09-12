@@ -1,755 +1,740 @@
 /*General*/
 
 * {
-    font-family: "Raleway", sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --main-color: #0065fc;
-    --main-bg-color: #f2f2f2;
-    --filter-bg-color: #deebff;
-    --grey: #d9d9d9;
+  --main-color: #0065fc;
+  --main-bg-color: #f2f2f2;
+  --filter-bg-color: #deebff;
+  --filter-border-color: #d9d9d9;
 }
 
 .fa-solid {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 body {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 50px;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .section-title {
-    margin: 0;
-    font-size: 22px;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card__image {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .card__title {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18.78px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.78px;
 }
 
 .card__subtitle {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 16.44px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.44px;
 }
 
 .card__content {
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .euro {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .neutral-star {
-    color: var(--main-bg-color);
+  color: var(--main-bg-color);
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 /*Header*/
 
 .main-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .main-header__logo {
-    width: 61.09px;
-    height: 19px;
-    margin: 30px 0;
+  width: 61.09px;
+  height: 19px;
+  margin: 30px 0;
 }
 
 .main-header__menu-list {
-    display: flex;
-    gap: 68px;
+  display: flex;
+  gap: 68px;
 }
 
 .main-header__link {
-    display: block;
-    padding: 16px 0;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18.78px;
+  display: block;
+  padding: 16px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.78px;
 }
 
 .main-header__link:hover {
-    padding-top: 14px;
-    border-top: 2px solid var(--main-color);
+  padding-top: 14px;
+  border-top: 2px solid var(--main-color);
 }
 
 .main-header__link--is-active {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 /*Searchbox*/
 
 .searchbox {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
 }
 
 .searchbox__title {
-    font-weight: 700;
-    line-height: 26px;
-    margin-bottom: 8px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 8px;
 }
 
 .searchbox__description {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    margin-bottom: 35px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 35px;
 }
 
 .searchbox__form {
-    width: 377px;
-    border: 1px solid var(--main-bg-color);
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    margin-bottom: 35px;
-    height: 49px;
+  width: 377px;
+  border: 1px solid var(--main-bg-color);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+  height: 49px;
 }
 
 .searchbox__dot-icon {
-    height: 49px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px 0px 0px 15px;
-    background-color: var(--main-bg-color);
-    color: black;
-    font-size: 18px;
+  height: 49px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px 0px 0px 15px;
+  background-color: var(--main-bg-color);
+  color: black;
+  font-size: 18px;
 }
 
 .searchbox__form-input {
-    display: block;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21.13px;
-    color: black;
-    width: calc(100% - 50px - 132px);
-    padding-left: 24px;
-    height: 100%;
+  display: block;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.13px;
+  color: black;
+  width: calc(100% - 50px - 132px);
+  padding-left: 24px;
+  height: 100%;
 }
 
 .searchbox__form-btn {
-    border: 0;
-    width: 132px;
-    height: 49px;
-    border-radius: 0 15px 15px 0;
-    background-color: var(--main-color);
-    color: white;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21.13px;
-    cursor: pointer;
+  border: 0;
+  width: 132px;
+  height: 49px;
+  border-radius: 0 15px 15px 0;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.13px;
+  cursor: pointer;
 }
 
 .searchbox__search-icon {
-    display: none;
+  display: none;
 }
 
 /*Filters*/
 
 .filters {
-    display: flex;
-    align-items: center;
-    margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
 }
 
 .filters__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21.13px;
-    margin-right: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.13px;
+  margin-right: 15px;
 }
 
 .filters__groups-groups-btns,
 .filters__groups-btns {
-    display: flex;
+  display: flex;
 }
 
-
 .filters__btn {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    padding: 4px 19px 4px 19px;
-    border-radius: 25px;
-    border: 2px solid var(--grey);
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 19.96px;
-    background-color: white;
-    margin-right: 15px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 4px 19px 4px 19px;
+  border-radius: 25px;
+  border: 2px solid var(--filter-border-color);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 19.96px;
+  background-color: white;
+  margin-right: 15px;
+  cursor: pointer;
 }
 
 .filters__btn:hover {
-    background-color: var(--filter-bg-color);
+  background-color: var(--filter-bg-color);
 }
 
 .filters__btn-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    width: 22px;
-    height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  width: 22px;
+  height: 22px;
 }
 
 .filters__info {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .filters__info-icon {
-    font-size: 11px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 1px solid var(--grey);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  font-size: 11px;
+  border-radius: 50%;
+  border: 1px solid var(--filter-border-color);
+  margin-right: 10px;
 }
 
 /*Accommodations-and-popular*/
 
 .accommodations-and-popular {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .accommodations-and-popular section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 30px;
 }
 
 /*Hebergements*/
 
 .hebergements {
-    width: 65%;
-    padding-bottom: 32.5px;
+  width: 65%;
+  padding-bottom: 32.5px;
 }
 
-
 .hebergements__title {
-    font-weight: 700;
-    line-height: 25.83px;
-    margin-bottom: 30px;
-    
+  font-weight: 700;
+  line-height: 25.83px;
+  margin-bottom: 30px;
+  height: 26px;
 }
 
 .hebergements__cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 1fr;
-    gap: 30px;
-    margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
 .hebergements__cards .card {
-    background-color: white;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .hebergements__cards .card__image {
-    height: 124px;
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    border: 5px solid white;
-    margin-bottom: 4px;
+  height: 124px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  border: 5px solid white;
+  margin-bottom: 4px;
 }
 
 .hebergements .card__content {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-.hebergements__cards .card__title{
-    line-height: 19px;
-    margin-bottom: 8px;
+.hebergements__cards .card__title {
+  line-height: 19px;
+  margin-bottom: 8px;
 }
 
-.hebergements__cards .card__subtitle{
-    line-height: 16px;
-    margin-bottom: 8px;
+.hebergements__cards .card__subtitle {
+  line-height: 16px;
+  margin-bottom: 8px;
 }
 
 .hebergements__cards .card__rating {
-    height: 13.25px;
-    display: flex;
-    align-items: center;
-    gap: 2.38px;
+  height: 13.25px;
+  display: flex;
+  align-items: center;
+  gap: 2.38px;
 }
 
 .hebergements .show-more {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21.13px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.13px;
 }
 
 /*Popular*/
 .popular {
-    width: 32%;
+  width: 32%;
 }
 
-.accommodations-and-popular .popular{
-    padding-bottom: 33.5px;
+.accommodations-and-popular .popular {
+  padding-bottom: 33.5px;
 }
 
 .popular__title-and-icon {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .popular__chartline-icon {
-    width: 18px;
-    height: 15.75px;
+  width: 18px;
+  height: 15.75px;
 }
 
 .popular_cards {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .popular_cards .card {
-    display: flex;
+  display: flex;
 }
 
 .popular_cards .card__image {
-    width: 33%;
-    height:134px;
-    border-radius: 20px 0 0 20px;
-
+  width: 33%;
+  height: 136px;
+  border-radius: 20px 0 0 20px;
 }
 
 .popular_cards .card__content {
-    width: 67%;
+  width: 67%;
 }
 
 .popular_cards .card__title {
-    margin: 10px 0 4px 0;
-}
-
-.popular_cards .card__subtitle {
-    margin: 0;
+  margin: 10px 0 4px 0;
 }
 
 .popular_cards .card__rating {
-    height: 12px;
-    display: flex;
-    align-items: center;
-    gap: 2;
-    margin-bottom: 5px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 5px;
 }
 
 /*Activities*/
 
 .activities {
-    padding: 30px;
-    margin-bottom: 35px;
+  padding: 30px;
+  margin-bottom: 35px;
 }
 
 .activities .section-title {
-    margin-bottom: 30px;
-    height: 30.02px;
+  margin-bottom: 30px;
+  height: 30.02px;
 }
 
 .activities__cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .activities__cards .activities__link {
-    width: 100%;
+  width: 100%;
 }
 
 .activities__cards .card {
-    padding: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .activities__cards .card__image {
-    height: 380px;
-    width: 100%;
-    border-radius: 20px 20px 0 0;
+  height: 380px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
 }
 
 .activities__cards .card__title {
-    padding: 20px 19px;
-    line-height: 19px;
+  padding: 20px 19px;
+  line-height: 19px;
 }
 
 /*Footer*/
 .footer {
-    background-color: var(--main-bg-color);
-    height: 163px;
-    display: flex;
-    padding-top: 20px;
+  background-color: var(--main-bg-color);
+  height: 163px;
+  display: flex;
+  padding-top: 20px;
 }
 
 .footer__section {
-    width: 33%;
-    margin-left: 20px;
+  width: 33%;
+  margin-left: 20px;
 }
 
 .footer__link {
-    display: inline-block;
-    white-space: nowrap;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .footer__title {
-    margin-bottom: 15px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21.3px;
-    white-space: nowrap;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.3px;
+  white-space: nowrap;
 }
 
 .footer__link {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18.78px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.78px;
 }
 
 .footer__list .footer__list-item:not(:last-child) {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
-
-
 
 /* Medium devices*/
 
 @media (max-width: 1024px) {
-    .searchbox {
-        height: 322px;
-    }
+  .searchbox {
+    height: 322px;
+  }
 
-    /*filters*/
+  /*filters*/
 
-    .filters {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .filters__title {
-        margin-bottom: 20px;
-    }
+  .filters__title {
+    margin-bottom: 20px;
+  }
 
-    .filters__btn {
-        font-size: 16px;
-        line-height: 18.78px;
-        text-wrap: nowrap;
-    }
+  .filters__btn {
+    font-size: 16px;
+    line-height: 18.78px;
+    white-space: nowrap;
+  }
 
-    /*Accommodations-and-popular*/
+  /*Accommodations-and-popular*/
 
-    .accommodations-and-popular {
-        flex-direction: column;
-    }
+  .accommodations-and-popular {
+    flex-direction: column;
+  }
 
-    /*Hebergement*/
+  /*Hebergement*/
 
-    .hebergements {
-        width: 100%;
-        margin-bottom: 50px;
-    }
+  .hebergements {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 
-    .popular {
-        width: 100%;
-        margin-bottom: 35px;
-    }
+  .popular {
+    width: 100%;
+    margin-bottom: 35px;
+  }
 
-    .popular__title-and-icon {
-        margin-bottom: 20px;
-    }
+  .popular__title-and-icon {
+    margin-bottom: 20px;
+  }
 
-    .popular_cards {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  .popular_cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .popular_cards .card {
-        height: 100%;
-    }
+  .popular_cards .card {
+    height: 100%;
+  }
 
-    .popular_cards .popular__link {
-        width: 30%;
-    }
+  .popular_cards .popular__link {
+    width: 30%;
+  }
 
-    /*Activities*/
+  /*Activities*/
 
-    .activities__cards .card__image {
-        height: 200px;
-    }
+  .activities__cards .card__image {
+    height: 200px;
+  }
 
-    .activities__cards .card__title {
-        padding-top: 16px;
-        padding-bottom: 16px;
-        padding-left: 19px;
-    }
+  .activities__cards .card__title {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 19px;
+  }
 }
 
 /*Small devices*/
 
 @media (max-width: 767.98px) {
-    .main-container {
-        padding: 0;
-    }
+  .main-container {
+    padding: 0;
+  }
 
-    /*Header*/
-    .main-header {
-        flex-direction: column;
-        align-items: center;
-    }
+  /*Header*/
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .main-header__logo{
-        margin-bottom: 2px;
-    }
+  .main-header__logo {
+    margin-bottom: 2px;
+  }
 
-    .main-header__nav {
-        width: 100%;
-    }
+  .main-header__nav {
+    width: 100%;
+  }
 
-    .main-header__menu-list {
-        gap: 0;
-    }
+  .main-header__menu-list {
+    gap: 0;
+  }
 
-    .main-header__menu-item {
-        width: 100%;
-    }
+  .main-header__menu-item {
+    width: 100%;
+  }
 
-    .main-header__link {
-        text-align: center;
-        padding: 17px 0;
-    }
+  .main-header__link {
+    text-align: center;
+    padding: 17px 0;
+  }
 
-    .main-header__link:hover {
-        border-top: 0;
-        border-bottom: 2px solid var(--main-color);
-        padding: 17px 0 15px 0;
-    }
+  .main-header__link:hover {
+    border-top: 0;
+    border-bottom: 2px solid var(--main-color);
+    padding: 17px 0 15px 0;
+  }
 
-    /*Searchbox*/
+  /*Searchbox*/
 
-    .searchbox {
-        padding: 0 20px 0 20px;
-        height: auto;
-    }
+  .searchbox {
+    padding: 0 20px 0 20px;
+    height: auto;
+  }
 
-    .searchbox__form {
-        width: 100%;
-    }
+  .searchbox__form {
+    width: 100%;
+  }
 
-    .searchbox__form-input {
-        width: calc(100% - 50px - 46px);
-    }
+  .searchbox__form-input {
+    width: calc(100% - 50px - 46px);
+  }
 
-    .searchbox__form-btn {
-        border-radius: 15px;
-        width: 46px;
-    }
+  .searchbox__form-btn {
+    border-radius: 15px;
+    width: 46px;
+  }
 
-    .searchbox__form-btn-text {
-        display: none;
-    }
+  .searchbox__form-btn-text {
+    display: none;
+  }
 
-    .searchbox__search-icon {
-        display: block;
-    }
+  .searchbox__search-icon {
+    display: block;
+  }
 
-    /*Filters*/
+  /*Filters*/
 
-    .filters {
-        margin-bottom: 20px;
-    }
+  .filters {
+    margin-bottom: 20px;
+  }
 
-    .filters__btn {
-        font-size: 14px;
-        line-height: 16px;
-        margin-bottom: 20px;
-        width: 162.5px;
-    }
+  .filters__btn {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    width: 162.5px;
+  }
 
-    .filters__groups-groups-btns {
-        flex-direction: column;
-    }
+  .filters__groups-groups-btns {
+    flex-direction: column;
+  }
 
-    .filters__groups-groups-btns,
-    .filters__groups-btns {
-        flex-wrap: wrap;
-    }
+  .filters__groups-groups-btns,
+  .filters__groups-btns {
+    flex-wrap: wrap;
+  }
 
-    /*Accommodations-and-popular*/
+  /*Accommodations-and-popular*/
 
-    .accommodations-and-popular .popular {
-        order: 1;
-    }
+  .accommodations-and-popular .popular {
+    order: 1;
+  }
 
-    .accommodations-and-popular .hebergements {
-        order: 2;
-    }
+  .accommodations-and-popular .hebergements {
+    order: 2;
+  }
 
-    /*Popular */
+  /*Popular */
 
-    .accommodations-and-popular .popular {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-right: 20px;
-        padding-left: 20px;
-        border-radius: 0;
-    }
+  .accommodations-and-popular .popular {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 0;
+  }
 
-    .popular__title-and-icon {
-        margin-bottom: 15px;
-    }
+  .popular__title-and-icon {
+    margin-bottom: 15px;
+  }
 
-    .popular_cards {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+  .popular_cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 
-    .popular_cards .card {
-        margin-top: 0;
-    }
+  .popular_cards .popular__link {
+    width: 100%;
+  }
 
-    .popular_cards .popular__link {
-        width: 100%;
-    }
+  /*Hebergements */
 
-    /*Hebergements */
+  .accommodations-and-popular .hebergements {
+    padding: 20px;
+    margin-bottom: 35px;
+    border-radius: 0;
+  }
 
-    .accommodations-and-popular .hebergements {
-        padding: 20px;
-        margin-bottom: 35px;
-        border-radius: 0;
-    }
+  .accommodations-and-popular section.hebergements {
+    background: white;
+  }
 
-    .accommodations-and-popular section.hebergements {
-        background: white;
-    }
+  .hebergements__title {
+    margin-bottom: 15px;
+  }
 
-    .hebergements__title {
-        margin-bottom: 15px;
-    }
+  .hebergements__cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 207.25px);
+    gap: 15px;
+    margin-bottom: 15px;
+  }
 
-    .hebergements__cards {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 207.25px);
-        gap: 15px;
-        margin-bottom: 15px;
-    }
+  .hebergements__cards .hebergements__link:nth-child(1) {
+    order: 1;
+  }
 
-    .hebergements__cards .hebergements__link:nth-child(1) {
-        order: 1;
-    }
+  .hebergements__cards .hebergements__link:nth-child(2) {
+    order: 6;
+  }
 
-    .hebergements__cards .hebergements__link:nth-child(2) {
-        order: 6;
-    }
+  .hebergements__cards .hebergements__link:nth-child(3) {
+    order: 3;
+  }
 
-    .hebergements__cards .hebergements__link:nth-child(3) {
-        order: 3;
-    }
+  .hebergements__cards .hebergements__link:nth-child(4) {
+    order: 4;
+  }
 
-    .hebergements__cards .hebergements__link:nth-child(4) {
-        order: 4;
-    }
+  .hebergements__cards .hebergements__link:nth-child(5) {
+    order: 2;
+  }
 
-    .hebergements__cards .hebergements__link:nth-child(5) {
-        order: 2;
-    }
+  .hebergements__cards .hebergements__link:nth-child(6) {
+    order: 5;
+  }
 
-    .hebergements__cards .hebergements__link:nth-child(6) {
-        order: 5;
-    }
+  /*Activities*/
 
-    /*Activities*/
+  .activities__cards {
+    flex-direction: column;
+  }
 
-    .activities__cards {
-        flex-direction: column;
-    }
+  .activities__cards .card__image {
+    height: 141px;
+  }
 
-    .activities__cards .card {
-        height: 200px;
-    }
+  .activities__cards .card__title {
+    padding: 20px 19px;
+  }
 
-    .activities__cards .card__image {
-        height: 141px;
-    }
+  .activities__cards a:not(:last-child) {
+    margin-bottom: 15px;
+  }
 
-    .activities__cards a:not(:last-child) {
-        margin-bottom: 15px;
-    }
+  /*Footer*/
 
-    /*Footer*/
+  .footer {
+    flex-direction: column;
+    height: 461px;
+    padding-top: 30px;
+  }
 
-    .footer {
-        flex-direction: column;
-        height: 461px;
-        padding-top: 30px;
-    }
+  .footer__section {
+    margin-left: 30px;
+  }
 
-    .footer__section {
-        margin-left: 30px;
-    }
-
-    .footer__section:not(:last-child) {
-        margin-bottom: 50px;
-    }
+  .footer__section:not(:last-child) {
+    margin-bottom: 50px;
+  }
 }
