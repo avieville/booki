@@ -337,10 +337,6 @@ li {
   width: 32%;
 }
 
-.accommodations-and-popular .popular {
-  padding-bottom: 33.5px;
-}
-
 .popular__title-and-icon {
   display: flex;
   justify-content: space-between;
